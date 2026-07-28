@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Runners | Community Runs</title>
+  <meta name="description" content="Social Runners – an easy-paced running community. Join our regular group runs and meet other runners through our Meetup group." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="nav-wrap">
+    <div class="nav">
+      <div class="brand">
+        SOCIAL RUNNERS COMMUNITY
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#intro">Home</a>
+        <a href="#about">About</a>
+        <a href="#runs">Group runs</a>
+        <a href="#blog">Blog</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="page">
+    <!-- HERO / INTRO -->
+    <section id="intro" class="hero">
+      <div>
+        <h1>Social Runners</h1>
+        <p>An easy-paced running community where we meet regularly for friendly group runs and conversation. All paces and experience levels welcome.</p>
+        <p class="hero-secondary">
+          We organise our runs through Meetup so it’s simple to see upcoming events and sign up.
+          <a href="https://www.meetup.com/valencia-social-runners/" target="_blank" rel="noopener">
+            Join us on Meetup →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT / COMMUNITY FEEL -->
+    <section id="about">
+      <div class="section-title">
+        <h2>About the community</h2>
+        <p>Social Runners is for people who like the idea of running together at a relaxed pace, meeting new people, and keeping things low-pressure.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Who it’s for</h3>
+          <p>Runners who enjoy easy-paced runs, are happy to chat between intervals, and want a welcoming group rather than a competitive club. New runners are very welcome.</p>
+        </div>
+
+        <div class="card">
+          <h3>What to expect</h3>
+          <p>Regular meetups, simple routes, no pressure on pace, and a focus on consistency and community. We regroup often so nobody gets left behind.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP RUNS SECTION -->
+    <section id="runs">
+      <div class="section-title">
+        <h2>Join a group run</h2>
+        <p>We schedule all our runs through Meetup. Check the event list, pick a time that works, and RSVP so we know you’re coming.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>How to join</h3>
+          <p>
+            1. Visit our Meetup page<br>
+            2. Join the Valencia Social Runners group<br>
+            3. RSVP to an upcoming event and meet us at the starting point
+          </p>
+          <p style="margin-top:10px;">
+            <a href="https://www.meetup.com/valencia-social-runners/" target="_blank" rel="noopener">
+              View upcoming runs on Meetup →
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG (one featured Wix post + see more link) -->
+    <section id="blog">
+      <div class="section-title">
+        <h2>From the blog</h2>
+        <p>Occasional articles on coaching, running, and community.</p>
+      </div>
+
+      <p style="text-align:right; font-size:12px; margin:0 0 12px;">
+        <a href="https://socialrunners.wixsite.com/socialrunners/blog" target="_blank" rel="noopener">
+          SEE MORE
+        </a>
+      </p>
+
+      <div class="blog-grid">
+        <article class="card blog-card">
+          <div class="thumb">
+            <img
+              src="https://static.wixstatic.com/media/793419_2861080884ae43bfaed8b254112e0e27~mv2.png/v1/fill/w_888,h_508,al_c,lg_1,q_90,enc_avif,quality_auto/793419_2861080884ae43bfaed8b254112e0e27~mv2.png"
+              alt="Group of runners training together with a coach by the water">
+          </div>
+          <div class="blog-body">
+            <div class="meta-row">
+              <span class="pill">Coaching</span>
+              <span>• 9 min read</span>
+            </div>
+            <h3>Traits of a Great Running Coach Runners Should Look For</h3>
+            <p>A practical guide to the qualities that actually matter when choosing a running coach.</p>
+            <div class="read-more">
+              <a class="link-btn"
+                 href="https://socialrunners.wixsite.com/socialrunners/post/traits-of-a-great-running-coach-runners-should-look-for"
+                 target="_blank" rel="noopener">
+                Read more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <span>© <span id="year"></span> Social Runners. All rights reserved.</span>
+        <a class="to-top" href="#intro">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

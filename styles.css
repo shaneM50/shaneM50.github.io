@@ -1,0 +1,244 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4efdd;             /* light beige */
+  color: #102820;                   /* dark green text */
+  font-size: 16px;                  /* base size */
+}
+
+/* LINKS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* SIMPLE NAVBAR */
+.nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0d332b;              /* dark green bar */
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f4efdd;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  color: #f4efdd;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE WRAPPER */
+.page {
+  max-width: 1100px;
+  margin: 40px auto 70px;
+  padding: 0 24px;
+}
+
+/* HERO / TITLE */
+.hero {
+  padding: 0 0 36px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.05;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 560px;
+  font-size: 16px;
+}
+
+.hero-secondary {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* BLOG LIST */
+#blog {
+  padding: 36px 0;
+}
+
+.blog-grid {
+  display: block;                   /* single column */
+}
+
+/* Card */
+.blog-card {
+  margin-top: 26px;
+  background: #f9f5e4;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 18px;
+}
+
+/* Image area */
+.blog-card .thumb {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.blog-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Meta + title */
+.meta-row {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.pill {
+  font-weight: 600;
+}
+
+/* Article text */
+.blog-body h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.blog-body p {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+/* Generic sections / cards */
+section {
+  padding: 36px 0;
+}
+
+.section-title h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.about-grid {
+  margin-top: 22px;
+  display: block;
+}
+
+.card {
+  background: #f9f5e4;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 26px 0 44px;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------- */
+/*  RESPONSIVE TWEAKS       */
+/* ------------------------- */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .brand {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .page {
+    margin: 24px auto 44px;
+    padding: 0 18px;
+  }
+
+  .blog-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 10px 12px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p,
+  .section-title p,
+  .blog-body p {
+    font-size: 14px;
+  }
+}
