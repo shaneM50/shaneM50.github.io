@@ -77,7 +77,7 @@
       </div>
     </section>
 
-    <!-- BLOG (featured blog posts + see more link) -->
+    <!-- BLOG (carousel) -->
     <section id="blog">
       <div class="section-title">
         <h2>From the blog</h2>
@@ -90,52 +90,60 @@
         </a>
       </p>
 
-      <div class="blog-grid">
-        <article class="card blog-card">
-          <div class="thumb">
-            <img
-              src="https://static.wixstatic.com/media/793419_39080cf4c66a47589dbe11df62c0f8be~mv2.png"
-              alt="Runner stretching outdoors before a workout">
-          </div>
-          <div class="blog-body">
-            <div class="meta-row">
-              <span class="pill">Runner Info</span>
-              <span>• 9 min read</span>
-            </div>
-            <h3>3 Runner Mistakes That Slow Progress (and How to Fix Them)</h3>
-            <p>Common training errors that quietly hold runners back and practical ways to correct them.</p>
-            <div class="read-more">
-              <a class="link-btn"
-                href="https://socialrunners.wixsite.com/socialrunners/post/3-runner-mistakes-that-slow-progress-and-how-to-fix-them"
-                target="_blank" rel="noopener">
-                Read more <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div>
-        </article>
+      <div class="blog-carousel">
+        <button class="blog-nav prev" aria-label="Previous article">‹</button>
 
-        <article class="card blog-card">
-          <div class="thumb">
-            <img
-              src="https://static.wixstatic.com/media/793419_2861080884ae43bfaed8b254112e0e27~mv2.png/v1/fill/w_888,h_508,al_c,lg_1,q_90,enc_avif,quality_auto/793419_2861080884ae43bfaed8b254112e0e27~mv2.png"
-              alt="Group of runners training together with a coach by the water">
-          </div>
-          <div class="blog-body">
-            <div class="meta-row">
-              <span class="pill">Runner Info</span>
-              <span>• 9 min read</span>
+        <div class="blog-track">
+          <article class="card blog-card">
+            <div class="thumb">
+              <img
+                src="https://static.wixstatic.com/media/793419_39080cf4c66a47589dbe11df62c0f8be~mv2.png"
+                alt="Runner stretching outdoors before a workout">
             </div>
-            <h3>Traits of a Great Running Coach Runners Should Look For</h3>
-            <p>A practical guide to the qualities that actually matter when choosing a running coach.</p>
-            <div class="read-more">
-              <a class="link-btn"
-                 href="https://socialrunners.wixsite.com/socialrunners/post/traits-of-a-great-running-coach-runners-should-look-for"
-                 target="_blank" rel="noopener">
-                Read more <span aria-hidden="true">→</span>
-              </a>
+            <div class="blog-body">
+              <div class="meta-row">
+                <span class="pill">Runner Info</span>
+                <span>• 9 min read</span>
+              </div>
+              <h3>3 Runner Mistakes That Slow Progress (and How to Fix Them)</h3>
+              <p>Common training errors that quietly hold runners back and practical ways to correct them.</p>
+              <div class="read-more">
+                <a class="link-btn"
+                   href="https://socialrunners.wixsite.com/socialrunners/post/3-runner-mistakes-that-slow-progress-and-how-to-fix-them"
+                   target="_blank" rel="noopener">
+                  Read more <span aria-hidden="true">→</span>
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <article class="card blog-card">
+            <div class="thumb">
+              <img
+                src="https://static.wixstatic.com/media/793419_2861080884ae43bfaed8b254112e0e27~mv2.png/v1/fill/w_888,h_508,al_c,lg_1,q_90,enc_avif,quality_auto/793419_2861080884ae43bfaed8b254112e0e27~mv2.png"
+                alt="Group of runners training together with a coach by the water">
+            </div>
+            <div class="blog-body">
+              <div class="meta-row">
+                <span class="pill">Runner Info</span>
+                <span>• 9 min read</span>
+              </div>
+              <h3>Traits of a Great Running Coach Runners Should Look For</h3>
+              <p>A practical guide to the qualities that actually matter when choosing a running coach.</p>
+              <div class="read-more">
+                <a class="link-btn"
+                   href="https://socialrunners.wixsite.com/socialrunners/post/traits-of-a-great-running-coach-runners-should-look-for"
+                   target="_blank" rel="noopener">
+                  Read more <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more <article class="card blog-card">...</article> here if needed -->
+        </div>
+
+        <button class="blog-nav next" aria-label="Next article">›</button>
       </div>
     </section>
 
@@ -147,8 +155,6 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

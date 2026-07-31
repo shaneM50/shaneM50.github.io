@@ -6,9 +6,9 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f4efdd;             /* light beige */
-  color: #102820;                   /* dark green text */
-  font-size: 16px;                  /* base size */
+  background: #f4efdd; /* light beige */
+  color: #102820; /* dark green text */
+  font-size: 16px; /* base size */
 }
 
 /* LINKS */
@@ -22,7 +22,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #0d332b;              /* dark green bar */
+  background: #0d332b; /* dark green bar */
 }
 
 .nav {
@@ -88,17 +88,33 @@ a {
   font-size: 15px;
 }
 
-/* BLOG LIST */
+/* BLOG SECTION */
 #blog {
   padding: 36px 0;
 }
 
-.blog-grid {
-  display: block;                   /* single column */
+/* BLOG CAROUSEL */
+.blog-carousel {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
 }
 
-/* Card */
+/* The scrolling area */
+.blog-track {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+/* One full-width card visible at a time, on all screen sizes */
 .blog-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   margin-top: 26px;
   background: #f9f5e4;
   border: 1px solid rgba(0,0,0,0.12);
@@ -140,6 +156,22 @@ a {
 .blog-body p {
   margin: 0 0 10px;
   font-size: 15px;
+}
+
+/* Nav buttons */
+.blog-nav {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  color: #102820;
+}
+
+.blog-nav:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 /* Generic sections / cards */
@@ -187,7 +219,7 @@ footer {
 }
 
 /* ------------------------- */
-/*  RESPONSIVE TWEAKS       */
+/* RESPONSIVE TWEAKS */
 /* ------------------------- */
 
 @media (max-width: 768px) {
@@ -221,6 +253,11 @@ footer {
   .blog-card {
     padding: 16px;
   }
+
+  .blog-nav {
+    font-size: 24px;
+    padding: 2px 6px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -240,5 +277,10 @@ footer {
   .section-title p,
   .blog-body p {
     font-size: 14px;
+  }
+
+  .blog-nav {
+    font-size: 22px;
+    padding: 2px 4px;
   }
 }
