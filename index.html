@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Runners | Community Runs</title>
-  <meta name="description" content="Social Runners – an easy-paced running community. Join our regular group runs and meet other runners through our Meetup group." />
+  <title data-i18n="meta.title"></title>
+  <meta name="description" content="" data-i18n="meta.description">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <div class="nav-wrap">
     <div class="nav">
-      <div class="brand">
-        SOCIAL RUNNERS COMMUNITY
-      </div>
+      <div class="brand" data-i18n="nav.brand"></div>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#intro">Home</a>
-        <a href="#about">About</a>
-        <a href="#runs">Group runs</a>
-        <a href="#first5k">First 5K</a>
-        <a href="#blog">Blog</a>
+        <a href="#intro" data-i18n="nav.home"></a>
+        <a href="#about" data-i18n="nav.about"></a>
+        <a href="#runs" data-i18n="nav.runs"></a>
+        <a href="#first5k" data-i18n="nav.first5k"></a>
+        <a href="#blog" data-i18n="nav.blog"></a>
       </nav>
+
+      <div class="lang-toggle" aria-label="Language selector">
+        <button data-lang="es" class="lang-btn active">ES</button>
+        <span class="lang-separator">/</span>
+        <button data-lang="en" class="lang-btn">EN</button>
+      </div>
     </div>
   </div>
 
@@ -29,27 +33,27 @@
     <!-- INTRO -->
     <section id="intro" class="hero">
       <div>
-        <h1>Social Runners</h1>
-        <p>All levels welcome. This is a social running group — we focus on chatting, meeting people, and enjoying the run rather than performance. We speak both Spanish and English. Slow-to-medium pace (about 5 km) — perfect for beginners and anyone who prefers a relaxed run.</p>
+        <h1 data-i18n="hero.title"></h1>
+        <p data-i18n="hero.body"></p>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
       <div class="section-title">
-        <h2>About the community</h2>
-        <p>Social Runners is for people who like the idea of running together at a relaxed pace, meeting new people, and keeping things low-pressure.</p>
+        <h2 data-i18n="about.title"></h2>
+        <p data-i18n="about.body"></p>
       </div>
 
       <div class="about-grid">
         <div class="card">
-          <h3>Who it’s for</h3>
-          <p>Runners who enjoy easy-paced runs, are happy to chat between intervals, and want a welcoming group rather than a competitive club. New runners are very welcome.</p>
+          <h3 data-i18n="about.who.title"></h3>
+          <p data-i18n="about.who.body"></p>
         </div>
 
         <div class="card">
-          <h3>What to expect</h3>
-          <p>Regular meetups, simple routes, no pressure on pace, and a focus on consistency and community.</p>
+          <h3 data-i18n="about.expect.title"></h3>
+          <p data-i18n="about.expect.body"></p>
         </div>
       </div>
     </section>
@@ -57,22 +61,19 @@
     <!-- GROUP RUNS SECTION -->
     <section id="runs">
       <div class="section-title">
-        <h2>Join a group run</h2>
-        <p>We schedule all our runs through Meetup. Check the event list, pick a time that works, and RSVP so we know you’re coming.</p>
+        <h2 data-i18n="runs.title"></h2>
+        <p data-i18n="runs.body"></p>
       </div>
 
       <div class="about-grid">
         <div class="card">
-          <h3>How to join</h3>
-          <p>
-            1. Visit our Meetup page<br>
-            2. Join the Valencia Social Runners group<br>
-            3. RSVP to an upcoming event and meet us at the starting point
-          </p>
+          <h3 data-i18n="runs.how.title"></h3>
+          <p data-i18n="runs.how.steps"></p>
           <p style="margin-top:10px;">
-            <a href="https://www.meetup.com/valencia-social-runners/" target="_blank" rel="noopener">
-              View upcoming runs on Meetup →
-            </a>
+            <a href="https://www.meetup.com/valencia-social-runners/"
+               target="_blank"
+               rel="noopener"
+               data-i18n="runs.how.cta"></a>
           </p>
         </div>
       </div>
@@ -81,53 +82,50 @@
     <!-- FIRST 5K 1:1 COACHING SECTION -->
     <section id="first5k">
       <div class="section-title">
-        <h2>First 5K</h2>
-        <p>1:1 beginner coaching focused on building a consistent running habit, starting safely, and working toward your first 5K.</p>
+        <h2 data-i18n="first5k.title"></h2>
+        <p data-i18n="first5k.subtitle"></p>
       </div>
 
       <div class="about-grid">
         <div class="card">
-          <h3>Who this is for</h3>
-          <p>You’re new to running (or returning after a break), want to avoid common beginner injuries, and prefer clear guidance instead of guessing your way through training.</p>
+          <h3 data-i18n="first5k.who.title"></h3>
+          <p data-i18n="first5k.who.body"></p>
         </div>
 
         <div class="card">
-          <h3>Coaching goal</h3>
-          <p>The main goal is to help you develop a sustainable running habit and start running safely, with a long-term vision of running your first 5K. The exact time it takes to reach 5K comfortably will depend on your current fitness, injury history, and how much you can realistically commit to training.</p>
+          <h3 data-i18n="first5k.goal.title"></h3>
+          <p data-i18n="first5k.goal.body"></p>
         </div>
 
         <div class="card">
-          <h3>How 1:1 coaching works</h3>
-          <p>You’ll work 1:1 with a <a href="https://uesca.com/" target="_blank" rel="noopener">UESCA</a>-certified running coach. We start with a short conversation about your goals, background, and schedule, then build a realistic plan that fits your life and training history.</p>
+          <h3 data-i18n="first5k.how.title"></h3>
+          <p data-i18n="first5k.how.body.part1"></p>
+          <p data-i18n="first5k.how.body.part2"></p>
         </div>
 
         <div class="card">
-          <h3>What’s included</h3>
-          <p>
-            • Beginner-friendly, personalised plan focused on habit and safety<br>
-            • Gradual progression using easy runs and walk–run intervals<br>
-            • Weekly 1:1 check-ins (message or call) to review how you’re feeling and adjust the plan<br>
-            • Practical tips on pacing, warm-ups, and recovery so you feel confident starting out
-          </p>
+          <h3 data-i18n="first5k.included.title"></h3>
+          <p data-i18n="first5k.included.items"></p>
         </div>
 
         <div class="card">
-          <h3>How to get started</h3>
-          <p>If you’re interested in First 5K 1:1 coaching, please contact our group organizer through the Valencia Social Runners page on Meetup and mention you’re asking about the First 5K coaching option.</p>
+          <h3 data-i18n="first5k.start.title"></h3>
+          <p data-i18n="first5k.start.body"></p>
           <p style="margin-top:10px;">
-            <a href="https://www.meetup.com/valencia-social-runners/" target="_blank" rel="noopener">
-              Contact the organizer on Meetup →
-            </a>
+            <a href="https://www.meetup.com/valencia-social-runners/"
+               target="_blank"
+               rel="noopener"
+               data-i18n="first5k.start.cta"></a>
           </p>
         </div>
 
         <div class="card">
-          <h3>What runners say</h3>
-          <p>“I went from barely being able to jog for two minutes to running my first 5K without stopping. The plan always felt doable and having someone check in each week kept me on track.”</p>
-          <p style="margin-top:8px;">— Laura, new runner</p>
+          <h3 data-i18n="first5k.testimonials.title"></h3>
+          <p data-i18n="first5k.testimonials.quote1.text"></p>
+          <p style="margin-top:8px;" data-i18n="first5k.testimonials.quote1.name"></p>
 
-          <p style="margin-top:14px;">“I’d tried couch-to-5K plans before and always dropped off. The 1:1 coaching helped me adapt things around my work and family, and I finally built a habit that feels sustainable.”</p>
-          <p style="margin-top:8px;">— David, busy parent</p>
+          <p style="margin-top:14px;" data-i18n="first5k.testimonials.quote2.text"></p>
+          <p style="margin-top:8px;" data-i18n="first5k.testimonials.quote2.name"></p>
         </div>
       </div>
     </section>
@@ -135,14 +133,15 @@
     <!-- BLOG (carousel) -->
     <section id="blog">
       <div class="section-title">
-        <h2>From the blog</h2>
-        <p>Occasional articles on running.</p>
+        <h2 data-i18n="blog.title"></h2>
+        <p data-i18n="blog.subtitle"></p>
       </div>
 
       <p style="text-align:right; font-size:12px; margin:0 0 12px;">
-        <a href="https://socialrunners.wixsite.com/socialrunners/blog" target="_blank" rel="noopener">
-          SEE MORE
-        </a>
+        <a href="https://socialrunners.wixsite.com/socialrunners/blog"
+           target="_blank"
+           rel="noopener"
+           data-i18n="blog.seeMore"></a>
       </p>
 
       <div class="blog-carousel">
@@ -153,21 +152,22 @@
             <div class="thumb">
               <img
                 src="https://static.wixstatic.com/media/793419_39080cf4c66a47589dbe11df62c0f8be~mv2.png"
-                alt="Runner stretching outdoors before a workout">
+                alt=""
+                data-i18n-alt="blog.post1.imageAlt">
             </div>
             <div class="blog-body">
               <div class="meta-row">
-                <span class="pill">Runner Info</span>
-                <span>• 9 min read</span>
+                <span class="pill" data-i18n="blog.post1.tag"></span>
+                <span data-i18n="blog.post1.readTime"></span>
               </div>
-              <h3>3 Runner Mistakes That Slow Progress (and How to Fix Them)</h3>
-              <p>Common training errors that quietly hold runners back and practical ways to correct them.</p>
+              <h3 data-i18n="blog.post1.title"></h3>
+              <p data-i18n="blog.post1.excerpt"></p>
               <div class="read-more">
                 <a class="link-btn"
                    href="https://socialrunners.wixsite.com/socialrunners/post/3-runner-mistakes-that-slow-progress-and-how-to-fix-them"
-                   target="_blank" rel="noopener">
-                  Read more <span aria-hidden="true">→</span>
-                </a>
+                   target="_blank"
+                   rel="noopener"
+                   data-i18n="blog.post1.cta"></a>
               </div>
             </div>
           </article>
@@ -176,26 +176,25 @@
             <div class="thumb">
               <img
                 src="https://static.wixstatic.com/media/793419_2861080884ae43bfaed8b254112e0e27~mv2.png/v1/fill/w_888,h_508,al_c,lg_1,q_90,enc_avif,quality_auto/793419_2861080884ae43bfaed8b254112e0e27~mv2.png"
-                alt="Group of runners training together with a coach by the water">
+                alt=""
+                data-i18n-alt="blog.post2.imageAlt">
             </div>
             <div class="blog-body">
               <div class="meta-row">
-                <span class="pill">Runner Info</span>
-                <span>• 9 min read</span>
+                <span class="pill" data-i18n="blog.post2.tag"></span>
+                <span data-i18n="blog.post2.readTime"></span>
               </div>
-              <h3>Traits of a Great Running Coach Runners Should Look For</h3>
-              <p>A practical guide to the qualities that actually matter when choosing a running coach.</p>
+              <h3 data-i18n="blog.post2.title"></h3>
+              <p data-i18n="blog.post2.excerpt"></p>
               <div class="read-more">
                 <a class="link-btn"
                    href="https://socialrunners.wixsite.com/socialrunners/post/traits-of-a-great-running-coach-runners-should-look-for"
-                   target="_blank" rel="noopener">
-                  Read more <span aria-hidden="true">→</span>
-                </a>
+                   target="_blank"
+                   rel="noopener"
+                   data-i18n="blog.post2.cta"></a>
               </div>
             </div>
           </article>
-
-          <!-- Add more <article class="card blog-card">...</article> here if needed -->
         </div>
 
         <button class="blog-nav next" aria-label="Next article">›</button>
@@ -204,12 +203,18 @@
 
     <footer>
       <div class="footer-row">
-        <span>© <span id="year"></span> Social Runners. All rights reserved.</span>
-        <a class="to-top" href="#intro">Back to top ↑</a>
+        <span>
+          <span data-i18n="footer.copy.prefix"></span>
+          <span id="year"></span>
+          <span data-i18n="footer.copy.suffix"></span>
+        </span>
+        <a class="to-top" href="#intro" data-i18n="footer.backToTop"></a>
       </div>
     </footer>
   </main>
 
+  <script src="locales/es.js"></script>
+  <script src="locales/en.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
