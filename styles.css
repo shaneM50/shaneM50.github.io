@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 /* SIMPLE NAVBAR */
 .nav-wrap {
   position: sticky;
@@ -44,8 +48,9 @@ a {
 .nav-links {
   display: flex;
   gap: 32px;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .nav-links a {
@@ -81,6 +86,7 @@ a {
   margin: 0;
   max-width: 560px;
   font-size: 16px;
+  color: #33473f;
 }
 
 .hero-secondary {
@@ -119,6 +125,9 @@ a {
   background: #f9f5e4;
   border: 1px solid rgba(0,0,0,0.12);
   padding: 18px;
+  line-height: 1.5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  border-radius: 8px;
 }
 
 /* Image area */
@@ -150,7 +159,7 @@ a {
 /* Article text */
 .blog-body h3 {
   margin: 0 0 8px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .blog-body p {
@@ -160,11 +169,16 @@ a {
 
 /* Nav buttons */
 .blog-nav {
-  background: none;
-  border: none;
+  background: rgba(13, 51, 43, 0.06);
+  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 28px;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 0;
   line-height: 1;
   color: #102820;
 }
@@ -201,6 +215,21 @@ section {
   border: 1px solid rgba(0,0,0,0.12);
   padding: 18px;
   margin-bottom: 20px;
+  line-height: 1.5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 20px;
+}
+
+/* FIRST 5K banded style */
+#first5k {
+  background: #f9f5e4;
+  border-radius: 8px;
+  padding: 32px 20px;
+  margin-top: 36px;
 }
 
 /* FOOTER */
@@ -216,6 +245,15 @@ footer {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+/* CTA coloring */
+.read-more a,
+#runs a,
+#first5k a,
+#blog > p a {
+  color: #0b6b4b;
+  font-weight: 500;
 }
 
 /* ------------------------- */
@@ -255,8 +293,13 @@ footer {
   }
 
   .blog-nav {
+    width: 32px;
+    height: 32px;
     font-size: 24px;
-    padding: 2px 6px;
+  }
+
+  #first5k {
+    padding: 24px 16px;
   }
 }
 
@@ -280,7 +323,8 @@ footer {
   }
 
   .blog-nav {
+    width: 30px;
+    height: 30px;
     font-size: 22px;
-    padding: 2px 4px;
   }
 }
