@@ -6,7 +6,7 @@ function setFooterYear() {
   yearElement.textContent = currentYear;
 }
 
-/* --- Carousel logic (same as before, just grouped) --- */
+/* --- Carousel logic --- */
 
 function getCarouselElements() {
   const track = document.querySelector('.blog-track');
@@ -125,7 +125,6 @@ function applyLocaleToTextNodes(dictionary) {
     const value = dictionary[key];
     if (!value) return;
 
-    // Preserve line breaks for multi-line values
     if (value.includes('\n')) {
       el.innerHTML = '';
       value.split('\n').forEach((line, index) => {
@@ -178,9 +177,31 @@ function initializeLanguageToggle() {
   });
 
   const saved = localStorage.getItem('preferredLanguage');
-  const initialLang = saved === 'es' ? 'es' : 'en';
+  const initialLang = saved === 'es' ? 'es' : 'en'; // default EN
   setLanguage(initialLang);
+}
 
+/* --- Nav toggle (burger) --- */
+
+function initializeNavToggle() {
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!toggleButton || !navLinks) return;
+
+  toggleButton.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    toggleButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        toggleButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 }
 
 /* --- Page init --- */
@@ -189,6 +210,7 @@ function initializePage() {
   setFooterYear();
   initializeCarousel();
   initializeLanguageToggle();
+  initializeNavToggle();
 }
 
 initializePage();

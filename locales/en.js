@@ -36,7 +36,7 @@ window.LOCALE_EN = {
   'first5k.how.body.part1': 'You’ll work 1:1 with a UESCA-certified running coach.',
   'first5k.how.body.part2': 'We start with a short conversation about your goals, background, and schedule, then build a realistic plan that fits your life and training history.',
   'first5k.included.title': 'What’s included',
-  'first5k.included.items': '• Beginner-friendly, personalised plan focused on habit and safety\n• Gradual progression using easy runs and walk–run intervals\n• Weekly 1:1 check-ins to review how you’re feeling and adjust the plan\n• Practical tips on pacing, warm-ups, and recovery so you feel confident starting out',
+  'first5k.included.items': '• Beginner-friendly, personalised plan focused on habit and safety\n• Gradual progression using easy runs and walk–run intervals\n• Weekly 1:1 check-ins (message or call) to review how you’re feeling and adjust the plan\n• Practical tips on pacing, warm-ups, and recovery so you feel confident starting out',
   'first5k.start.title': 'How to get started',
   'first5k.start.body': 'If you’re interested in First 5K 1:1 coaching, please contact our group organizer through the Valencia Social Runners page on Meetup and mention you’re asking about the First 5K coaching option.',
   'first5k.start.cta': 'Contact the organizer on Meetup →',
